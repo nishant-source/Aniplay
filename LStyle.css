@@ -106,6 +106,26 @@
     font-size: 1rem;
     color: #ffffff88;
 }
+ /* CSS FOR TRENDING SECTION  */
+
+ .trending{
+    border: 2px solid white;
+
+ }
+ .trend-item span{
+    position: relative;
+
+    transform: rotate(90deg);
+    background: linear-gradient(90deg,black,white);
+    color: white;
+    font-weight: bold;
+}
+ .trend-item img{
+    width: 100px;
+    height: 200px;
+
+ }
+
 /* CSS FOR ANIME PLAYER  */
 .anime-player {
     display: flex;
