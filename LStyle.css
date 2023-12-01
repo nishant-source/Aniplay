@@ -82,7 +82,7 @@
 }
 .slide-content{
     max-width: 700px;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 .slide-title{
     margin-top: 80px;
@@ -91,7 +91,8 @@
 .slide-anime-detail{
     color: white;
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 .icon{
     padding-right: 2px;
@@ -110,19 +111,48 @@
 
  .trending{
     border: 2px solid white;
-
+    padding: 10px;
+    overflow-x: scroll;
+ }
+ .trend-title{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+ }
+ #trend-list{
+    display: flex;
+    gap: 100px;
+ }
+ .trend-card
+ {
+    position: relative;
+    width: 210px;
+    height: 100%;
  }
  .trend-item span{
-    position: relative;
-
+    position: absolute;
+    top: 90px;
+    left: -85px;
     transform: rotate(90deg);
-    background: linear-gradient(90deg,black,white);
+    background: black;
     color: white;
     font-weight: bold;
-}
- .trend-item img{
+    font-size: 21px;
+    width: 210px;
+    padding: 4px 2px;
+    max-height: 30px;
+    overflow: hidden;
+ }
+ .trend-image{
+    position: relative;
     width: 100px;
-    height: 200px;
+    height: 210px;
+    left: 34px;
+ }
+ .trend-image img{
+    width: 150px;
+    height: 210px;
 
  }
 
@@ -195,6 +225,9 @@
     padding: 10px 0px;
 
 }
+.item-card{
+    position: relative;
+}
 .item{
     transition: 0.3s;
 }
@@ -204,8 +237,8 @@
     max-width: 180px;
     background: linear-gradient(56deg, white, transparent);
     position: absolute;
-    left: 315px;
-    top: 730px;
+    left: 100px;
+    bottom: 130px;
     z-index: 5;
     align-items: center;
     padding: 8px 5px;
