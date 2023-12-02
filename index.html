@@ -148,86 +148,40 @@
         </div>
         <div class="trending">
             <div class="trend-title">Trending</div>
-            <div  id="trend-list">
-                <div class="trend-card">
-                    <div class="trend-item">
-                        <span>Shangri-La Frontier</span>
-                    </div>
-                    <div class="trend-image">
-                        <img src="image/SLF.jpg" alt="Shangri-La Frontier">
+            <div class="trend-list-container">
+                <div id="trend-list">
+                    <div class="trend-card">
+                        <div class="trend-item">
+                            <span>Shangri-La Frontier</span>
+                        </div>
+                        <div class="trend-image">
+                            <img src="image/SLF.jpg" alt="Shangri-La Frontier">
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="scroll-button " style="top: 60px;" onclick="scrollContent('right')"><i
+                    class="fa-solid fa-arrow-right"></i></div>
+            <div class="scroll-button" style="top:165px;" onclick="scrollContent('left')"><i
+                    class="fa-solid fa-arrow-left"></i></div>
         </div>
-        <div class="RecommandBox">
+        <div class="AvailableBox">
             <div>
-                <h3 style="color: #afca90c7; margin: 10px; font-size: 20px;">Recommended for you</h3>
+                <span style="color: rgb(214, 214, 118); font-weight: bold; font-size: 30px;">Available for you</span>
             </div>
-            <div class="categories">
-                <div class="item-card">
-                    <div class="item a" data-url="/That time i got reincarnated as a Slime">
-                        <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
-                        <p>That Time I Got Reincarnated as a Slime</p>
+            <div class="Anime-container">
+                <div id="available-list">
+                    <div class="item-card">
+                        <div class="item " data-url="/That time i got reincarnated as a Slime">
+                            <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
+                            <p>That Time I Got Reincarnated as a Slime</p>
+                        </div>
+                        <div class="floatItem">
+                            <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
+                            <p>That Time I Got Reincarnated as a Slime</p>
+                            <div class="playButton"><a href="That time i got reincarnated as a Slime">Play</a></div>
+                        </div>
                     </div>
-                    <div class="emin">
-                        <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
-                        <p>That Time I Got Reincarnated as a Slime</p>
-                        <div class="playButton"><a href="That time i got reincarnated as a Slime">Play</a></div>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item " data-url="/Eminence In Shadow">
-                        <img src="image/Eminence.jpg" alt="The Eminence in Shadow">
-                        <p>The Eminence in Shadow</p>
-                    </div>
-                    <div class="emin">
-                        <img src="image/Eminence.jpg" alt="The Eminence in Shadow">
-                        <p style="color: black;">The Eminence in Shadow</p>
-                        <div class="playButton"><a href="/Eminence In Shadow">Play</a></div>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item" data-url="/The 100 girls really love me">
-                        <img src="image/The 100 Girls.jpg" alt="The 100 Girls Really Loves me">
-                        <p>The 100 Girlfriends Who Really, Really, Really, Really, Really Love You</p>
-                    </div>
-                    <div class="emin">
-                        <img src="image/The 100 Girls.jpg" alt="The 100 Girls Really Loves me">
-                        <p>The 100 Girlfriends Who Really, Really, Really, Really, Really Love You</p>
-                        <div class="playButton"><a href="/The 100 girls really love me/index.html">Play</a></div>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item item4" data-url="/Oresaku">
-                        <img src="image/OreSuki.jpg" alt="ORESUKI Are You Really the Only One Who Likes Me">
-                        <p>ORESUKI Are You Really the Only One Who Likes Me</p>
-                    </div>
-                    <div class="emin emin4">
-                        <img src="image/OreSuki.jpg" alt="ORESUKI Are You Really the Only One Who Likes Me">
-                        <p>ORESUKI Are You Really the Only One Who Likes Me</p>
-                        <div class="playButton"><a href="/Oresaku/index.html">Play</a></div>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item " data-url="/Shangri-La Frontier">
-                        <img src="image/SLF.jpg" alt="Shangri-La Frontier">
-                        <p>Shangri-La Frontier</p>
-                    </div>
-                    <div class="emin">
-                        <img src="image/SLF.jpg" alt="Shangri-La Frontier">
-                        <p>Shangri-La Frontier</p>
-                        <div class="playButton"><a href="Shangri-La Frontier">Play</a></div>
-                    </div>
-                </div>
-                <div class="item-card">
-                    <div class="item " data-url="/Spy X Family">
-                        <img src="image/SXF.jpg" alt="Spy X Family">
-                        <p>Spy X Family</p>
-                    </div>
-                    <div class="emin">
-                        <img src="image/SXF.jpg" alt="Spy X Family">
-                        <p>Spy X Family</p>
-                        <div class="playButton"><a href="Spy X Family">Play</a></div>
                     </div>
                 </div>
             </div>
@@ -246,6 +200,7 @@
     </footer>
 
 </body>
+<script src="AvailList.js"></script>
 <script src="SearchResult.js"></script>
 <script src="trendList.js"></script>
 <script src="Script.js"></script>

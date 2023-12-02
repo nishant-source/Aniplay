@@ -1,3 +1,4 @@
+const trendList = document.getElementById("trend-list");
 
  function fetchTrend(url) {
     fetch(url)
@@ -15,11 +16,11 @@
             // Looping through the 'data' array
             dataArray.forEach(item => {
                 // Accessing the 'title' property within 'attributes'
-                let itemTitle = item.attributes.titles.en;
-                if(itemTitle === undefined){
-                    itemTitle = item.attributes.slug;
+                let itemTitle = item.title_english;
+                if(itemTitle === null){
+                    itemTitle = item.title;
                 }
-                const itemImg = item.attributes.posterImage.tiny;
+                const itemImg = item.images.jpg.image_url;
                 // Log or use the retrieved 'title' value
                 console.log('Title:', itemTitle);
                 console.log('ImageLink:', itemImg);
@@ -42,3 +43,9 @@
         });
 
 }
+// Attribute of kitsu api for trending page info
+// let itemTitle = item.attributes.titles.en;
+// if(itemTitle === undefined){
+//     itemTitle = item.attributes.slug;
+// }
+// const itemImg = item.attributes.posterImage.tiny;

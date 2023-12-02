@@ -1,7 +1,6 @@
     const sIcon = document.getElementById('search-icon');
     const sBar = document.querySelector('.search-bar');
     const resultsContainer = document.getElementById("results-container");
-    const trendList = document.getElementById("trend-list");
     const searchInput = document.getElementById('sBarr')
 
     const menuIcon = document.getElementById('menu-icon');
@@ -81,7 +80,19 @@ function showSlides() {
     setTimeout(showSlides, 4000); // Change slide every 2 seconds (2000 milliseconds)
 }
 
-
-let trendUrl = "https://kitsu.io/api/edge/trending/anime";
+//Function call for trending list
+let trendUrl = "https://api.jikan.moe/v4/top/anime?filter=airing&type=tv&sfw=false&rating=r17";
 
 fetchTrend(trendUrl);
+//function for scroll trending list
+
+function scrollContent(direction) {
+    const container = document.querySelector('.trend-list-container');
+    const scrollAmount = 200; // Adjust this value based on your preference
+
+    if (direction === 'left') {
+      container.scrollLeft -= scrollAmount;
+    } else if (direction === 'right') {
+      container.scrollLeft += scrollAmount;
+    }
+  }

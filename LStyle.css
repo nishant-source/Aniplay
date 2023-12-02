@@ -110,9 +110,8 @@
  /* CSS FOR TRENDING SECTION  */
 
  .trending{
-    border: 2px solid white;
-    padding: 10px;
-    overflow-x: scroll;
+    padding: 10px 15px 40px 20px;
+    position: relative;
  }
  .trend-title{
     color: white;
@@ -120,9 +119,25 @@
     font-weight: bold;
     margin: 10px;
  }
+ .trend-list-container{
+    position: relative;
+    overflow: hidden; /* Hide horizontal scrollbar */
+    white-space: nowrap;
+ }
+ .scroll-button{
+   
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    z-index: 10;
+    right: 0;
+    background: #000000d9;
+    padding: 10px 13px 10px 0px;
+ }
  #trend-list{
     display: flex;
-    gap: 100px;
+    gap: 120px;
+    
  }
  .trend-card
  {
@@ -134,13 +149,13 @@
     position: absolute;
     top: 90px;
     left: -85px;
-    transform: rotate(90deg);
-    background: black;
+    transform: rotate(270deg);
+    background: rgba(0, 0, 0, 0.521);
     color: white;
-    font-weight: bold;
-    font-size: 21px;
+    font-weight: 100;
+    font-size: 18px;
     width: 210px;
-    padding: 4px 2px;
+    padding: 4px 9px;
     max-height: 30px;
     overflow: hidden;
  }
@@ -220,10 +235,10 @@
     font-size: 20px;
 }
  /* CSS FOR ANIME RECOMMAND SECTION  */
-.categories{
+#available-list{
     display: flex;
-    padding: 10px 0px;
-
+    padding: 20px 0px;
+    gap: 20px;
 }
 .item-card{
     position: relative;
@@ -231,7 +246,7 @@
 .item{
     transition: 0.3s;
 }
-.emin {
+.floatItem {
     display: none;
     flex-direction: column;
     max-width: 180px;
@@ -248,29 +263,27 @@
     transition: 0.3s;
 }
 
-.emin p {
+.floatItem p {
     color: white;
     margin: 10px;
     font-weight: bold;
 }
 
-.emin img {
+.floatItem img {
     width: 150px;
     height: 200px;
 }
 .item:hover{
     filter: blur(10px);
 }
-.item:hover + .emin{
+.item:hover + .floatItem{
     display: flex;
 
 }
-.emin:hover{
+.floatItem:hover{
     display: flex;
 }
-.emin4:hover + .item4{
-    filter: blur(10px);
-}
+
 .seasonContainer{
     order: 3;
     display: flex;
