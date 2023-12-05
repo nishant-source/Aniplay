@@ -96,3 +96,12 @@ function scrollContent(direction) {
       container.scrollLeft += scrollAmount;
     }
   }
+
+// Redirection Function for page
+  function redirectToPlayer(parameterValue) {
+    // Construct the URL with the path parameter
+    var url = '/That time i got reincarnated as a slime/index.html?parameter=' + parameterValue;
+
+    // Redirect to the constructed URL
+    window.location.href = url;
+}

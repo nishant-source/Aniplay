@@ -20,6 +20,7 @@ const trendList = document.getElementById("trend-list");
                 if(itemTitle === null){
                     itemTitle = item.title;
                 }
+                const itemID = item.mal_id;
                 const itemImg = item.images.jpg.image_url;
                 // Log or use the retrieved 'title' value
                 console.log('Title:', itemTitle);
@@ -27,12 +28,13 @@ const trendList = document.getElementById("trend-list");
                 const trendItem = document.createElement("div");
                 trendItem.classList.add("trend-card");
                 trendItem.innerHTML = `
-                <div class="trend-item">
+                <div class="trend-item" onClick="redirectToPlayer('${itemID}')">
                 <span>${itemTitle}</span>
                 </div>
-                <div class="trend-image">
-                <img src="${itemImg}" alt="Shangri-La Frontier">
-                 </div>
+                <div class="trend-image" >
+                <img onClick="redirectToPlayer('${itemID}')" src="${itemImg}" alt="Shangri-La Frontier">
+                
+                </div>
                     `;
                 trendList.appendChild(trendItem);
             });

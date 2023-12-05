@@ -54,7 +54,7 @@
                         <div class="loader"></div>
                     </div>
                     <iframe id="myIframe"
-                        src="//goone.pro/streaming.php?id=MTEwMzY5&amp;title=Tensei+shitara+Slime+Datta+Ken+Episode+1&amp;typesub=SUB"
+                        src=""
                         allow="autoplay; geolocation; display-capture; picture-in-picture"
                         allowfullscreen="true"  allowautoplay='true' frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
                 </div>
@@ -236,6 +236,25 @@
 
 </body>
 <script src="/Script.js"></script>
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
 
+    // Get the parameter value
+    var parameterValue = getParameterByName('parameter');
+
+    // Use the parameter value as needed
+    if (parameterValue) {
+        console.log('Parameter value:', parameterValue);
+        // Your code to use the parameter value goes here
+    }
+</script>
 
 </html>

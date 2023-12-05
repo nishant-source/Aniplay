@@ -20,6 +20,7 @@ function fetchAvail(url) {
                 if(itemTitle === null){
                     itemTitle = dataArray.title;
                 }
+                const itemID= dataArray.mal_id;
                 const itemImg = dataArray.images.jpg.image_url;
                 // Log or use the retrieved 'title' value
                 console.log('Title:', itemTitle);
@@ -34,7 +35,7 @@ function fetchAvail(url) {
             <div class="floatItem">
             <img src="${itemImg}" alt="${itemTitle}">
             <p>${itemTitle}</p>
-                <div class="playButton"><a href="That time i got reincarnated as a Slime">Play</a></div>
+                <div class="playButton" onClick="redirectToPlayer('${itemID}')">Play</div>
             </div>
                     `;
                 AvailList.appendChild(availItem);
