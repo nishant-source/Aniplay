@@ -21,8 +21,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="head">
+    <header style="position: static;">
+        <div class="head" >
             <div id="menu-icon">&#9776;</div>
             <nav id="menu">
                 <ul>
@@ -48,7 +48,7 @@
     <main>
         <section class="anime-player">
             <div class="video-player">
-                <div class="anime-title"><p>That time i got reincarnated as a Slime</p></div>
+                <div id="AnimeTitle" class="anime-title"><p></p></div>
                 <div class="player">
                     <div id="loading-indicator">
                         <div class="loader"></div>
@@ -79,94 +79,23 @@
                 </div>
             </div>
             <div class="episodeTable">
-                <div class="episodeList">
+                
+                <div class="episodeList-title">
                     <h3>List of Episode:</h3>
                 </div>
                 <div class="episode-list">
-                    <div id="Ep1" class="episode">
-                        <p>1 The Storm dragon, verudora</p>
-                    </div>
-                    <div id="Ep2" class="episode color2">
-                        <p>2 Meeting the goblins</p>
-                    </div>
-                    <div id="Ep3" class="episode">
-                        <p>3 Battle at the goblin village</p>
-                    </div>
-                    <div id="Ep4" class="episode color2">
-                        <p>4 In the kingdom of the dwarves</p>
-                    </div>
-                    <div id="Ep5" class="episode">
-                        <p>5 Hero King, gazel dwargo</p>
-                    </div>
-                    <div id="Ep6" class="episode color2">
-                        <p>6 shizu</p>
-                    </div>
-                    <div id="Ep7" class="episode">
-                        <p>7 Conqueror of flames</p>
-                    </div>
-                    <div id="Ep8" class="episode color2">
-                        <p>8 Inherited will</p>
-                    </div>
-                    <div id="Ep9" class="episode">
-                        <p>9 Attack of the ogres</p>
-                    </div>
-                    <div id="Ep10" class="episode color2">
-                        <p>10 The orc lord</p>
-                    </div>
-                    <div id="Ep11" class="episode">
-                        <p>11 Gabiru</p>
-                    </div>
-                    <div id="Ep12" class="episode color2">
-                        <p>12 The gears spin out of control</p>
-                    </div>
-                    <div id="Ep13" class="episode">
-                        <p>13 The great clash</p>
-                    </div>
-                    <div id="Ep14" class="episode color2">
-                        <p>14 The one who devours all</p>
-                    </div>
-                    <div id="Ep15" class="episode">
-                        <p>15 The jura forest alliance</p>
-                    </div>
-                    <div id="Ep16" class="episode color2">
-                        <p>16 Demon lord millim attacks</p>
-                    </div>
-                    <div id="Ep17" class="episode">
-                        <p>17 The gathering</p>
-                    </div>
-                    <div id="Ep18" class="episode color2">
-                        <p>18 Evil creeps closer</p>
-                    </div>
-                    <div id="Ep19" class="episode">
-                        <p>19 charybdis</p>
-                    </div>
-                    <div id="Ep20" class="episode color2">
-                        <p>20 Yuuki kagurazaka</p>
-                    </div>
-                    <div id="Ep21" class="episode">
-                        <p>21 Shizu-san's students</p>
-                    </div>
-                    <div id="Ep22" class="episode color2">
-                        <p>22 Conquering the labyrinth</p>
-                    </div>
-                    <div id="Ep23" class="episode">
-                        <p>23 Saved Souls</p>
-                    </div>
-                    <div id="Ep24" class="episode color2">
-                        <p>24 Black and the mask</p>
-                    </div>
+                    <div id="EpisodeList">
+                     <!-- Get data from the API -->
+                </div>
                 </div>
             </div>
             <div class="seasonContainer">
-            <div class="anime-detail-box">
-                <div class="anime-detail-image">
-                    <img src="/image/anime-image.jpg"
-                        alt="That time i reincarnated as a Slime" width="80px" height="120px">
+            <div id="AnimeDetailBox" class="anime-detail-box">
+                <div id="animeDetailImg" class="anime-detail-image">
+                  
                 </div>
-                <div class="anime-detail">
-                    <h3>That Time I Got Reincarnated as a Slime</h3>
-                    <p>Total Episodes : 24</p>
-                    <p>Aired: Oct 2,2018 to Mar 19,2019</p>
+                <div id="AnimeDetail" class="anime-detail">
+                    
                 </div>
             </div>
                 <div class="seasonbox">
@@ -176,48 +105,24 @@
             
         </div>
         </section>
-        <div class="RecommandBox">
+        <div class="AvailableBox">
             <div>
-                <h3 style="color: #afca90c7; margin: 10px; font-size: 20px;">Recommended for you</h3>
+                <span style="color: rgb(214, 214, 118); font-weight: bold; font-size: 30px;">Available for you</span>
             </div>
-            <div class="categories">
-                <div class="item a" data-url="/That time i got reincarnated as a Slime">
-                    <img src="/image/anime-image.jpg"
-                        alt="That time I got reincarnated as a slime">
-                    <p>That Time I Got Reincarnated as a Slime</p>
-                </div>
-                <div class="emin" style="left: 130px;">
-                    <img src="/image/anime-image.jpg"
-                        alt="That time I got reincarnated as a slime">
-                    <p>That Time I Got Reincarnated as a Slime</p>
-                    <div class="playButton"><a href="/That time i got reincarnated as a Slime">Play</a></div>
-                </div>
-                <div class="item " data-url="/Eminence In Shadow">
-                    <img src="/image/Eminence.jpg" alt="The Eminence in Shadow">
-                    <p>The Eminence in Shadow</p>
-                </div>
-                <div class="emin">
-                    <img src="/image/Eminence.jpg" alt="The Eminence in Shadow">
-                    <p style="color: black;">The Eminence in Shadow</p>
-                    <div class="playButton"><a href="/Eminence In Shadow">Play</a></div>
-                </div>
-                <div class="item">
-                    <img src="/image/The 100 Girls.jpg" alt="The 100 Girls Really Loves me">
-                    <p>The 100 Girlfriends Who Really, Really, Really, Really, Really Love You</p>
-                </div>
-                <div class="emin" style="left: 500px;">
-                    <img src="/image/The 100 Girls.jpg" alt="The 100 Girls Really Loves me">
-                    <p>The 100 Girlfriends Who Really, Really, Really, Really, Really Love You</p>
-                    <div class="playButton"><a href="">Play</a></div>
-                </div>
-                <div class="item">
-                    <img src="/image/OreSuki.jpg" alt="ORESUKI Are You Really the Only One Who Likes Me">
-                    <p>ORESUKI Are You Really the Only One Who Likes Me</p>
-                </div>
-                <div class="emin" style="left: 695px;">
-                    <img src="/image/OreSuki.jpg" alt="ORESUKI Are You Really the Only One Who Likes Me">
-                    <p>ORESUKI Are You Really the Only One Who Likes Me</p>
-                    <div class="playButton"><a href="">Play</a></div>
+            <div class="Anime-container">
+                <div id="available-list">
+                    <div class="item-card">
+                        <div class="item " data-url="/That time i got reincarnated as a Slime">
+                            <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
+                            <p>That Time I Got Reincarnated as a Slime</p>
+                        </div>
+                        <div class="floatItem">
+                            <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
+                            <p>That Time I Got Reincarnated as a Slime</p>
+                            <div class="playButton"><a href="That time i got reincarnated as a Slime">Play</a></div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,6 +141,7 @@
 
 </body>
 <script src="/Script.js"></script>
+<!-- <<<<<<< Updated upstream
 <script>
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
@@ -247,6 +153,9 @@
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
 
+
+>>>>>>> Stashed changes
+
     // Get the parameter value
     var parameterValue = getParameterByName('parameter');
 
@@ -255,6 +164,8 @@
         console.log('Parameter value:', parameterValue);
         // Your code to use the parameter value goes here
     }
-</script>
-
+</script> -->
+<script src="/AvailList.js"></script>
+<script src="/SearchResult.js"></script>
+<script src="/That time i got reincarnated as a Slime/PlayerContent.js"></script>
 </html>

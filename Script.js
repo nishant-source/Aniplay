@@ -100,7 +100,7 @@ function scrollContent(direction) {
 // Redirection Function for page
   function redirectToPlayer(parameterValue) {
     // Construct the URL with the path parameter
-    var url = '/That time i got reincarnated as a slime/index.html?parameter=' + parameterValue;
+    var url = '/That time i got reincarnated as a slime/index.html?AnimeId=' + parameterValue;
 
     // Redirect to the constructed URL
     window.location.href = url;

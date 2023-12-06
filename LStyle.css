@@ -204,17 +204,19 @@
 }
 
 .player {
-    height: 480px;
+    height: 400px;
 }
 
 .episodeTable {
     order: 1;
     flex: 0.3;
     max-width: 23%;
+    max-height: 510px;
+    border: none;
 }
 
 .episode-list {
-    height: 600px;
+    height: 450px;
    
 }
 
