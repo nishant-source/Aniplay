@@ -34,7 +34,7 @@ searchInput.addEventListener("input", () => {
     let query = searchInput.value.toLowerCase();
     query = query.replace(/ /g, "%20");
     console.log(query);
-    const apiUrl = `https://kitsu.io/api/edge/anime?filter%5Btext%5D=%20${query}`;
+    const apiUrl = `https://api.jikan.moe/v4/anime?q=%20${query}`;
     fetchJSON(apiUrl);
 
 });
@@ -100,7 +100,7 @@ function scrollContent(direction) {
 // Redirection Function for page
   function redirectToPlayer(parameterValue) {
     // Construct the URL with the path parameter
-    var url = '/That time i got reincarnated as a slime/index.html?AnimeId=' + parameterValue;
+    var url = '/Player/index.html?AnimeId=' + parameterValue;
 
     // Redirect to the constructed URL
     window.location.href = url;

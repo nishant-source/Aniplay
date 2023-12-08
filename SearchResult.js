@@ -14,17 +14,21 @@ function fetchJSON(url) {
             // Looping through the 'data' array
             dataArray.forEach(item => {
                 // Accessing the 'title' property within 'attributes'
-                const itemTitle = item.attributes.titles.en;
-                const itemImg = item.attributes.posterImage.tiny;
-                // Log or use the retrieved 'title' value
+                let itemTitle = item.title_english;
+                if(itemTitle === null){
+                    itemTitle = item.title;
+                }
+                const itemID = item.mal_id;
+                const itemImg = item.images.jpg.image_url;
                 console.log('Title:', itemTitle);
                 console.log('ImageLink:', itemImg);
                 const resultItem = document.createElement("div");
                 resultItem.classList.add("result-item");
                 resultItem.innerHTML = `
+                <div onClick="redirectToPlayer('${itemID}')">
                 <img src="${itemImg}" alt="${itemTitle}">
                 <h3>${itemTitle}</h3>
-    
+                </div>
                     `;
                 resultsContainer.appendChild(resultItem);
             });

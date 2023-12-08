@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
 </head>
 <body>
-  <i class="material-symbols-outlined">
-    laptop_mac
-  </i>
+    <div id="video-container">
+        <iframe id="video-frame" src="https://streamtape.site/e/eA8ABOkqBJcYqkm/EP-01.mp4" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    const videoFrame = document.getElementById('video-frame');
+
+    // Function to change video quality
+    function changeVideoQuality(quality) {
+        // Adjust the URL with the desired quality parameter
+        const newSrc = updateQueryStringParameter(videoFrame.src, 'quality', quality);
+        videoFrame.src = newSrc;
+    }
+
+    // Helper function to update URL parameters
+    function updateQueryStringParameter(uri, key, value) {
+        const re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+        const separator = uri.indexOf('?') !== -1 ? "&" : "?";
+        if (uri.match(re)) {
+            return uri.replace(re, '$1' + key + "=" + value + '$2');
+        } else {
+            return uri + separator + key + "=" + value;
+        }
+    }
+
+    // Example: Change video quality to 'low', 'medium', or 'high'
+    changeVideoQuality('low');
+});
+
+    </script>
 </body>
 </html>

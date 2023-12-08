@@ -27,20 +27,22 @@
 }
 /* CSS FOR SEARCH BAR AND ITS RESULT  */
 .search-bar{
-    top: 8px;
-    right: 50px;
-    width: 18%;
+       
+        right: 50px;
+        width: 15vw;
 
 }
 #results-container{
     display: block;
     background-color: rgb(56, 55, 55);
     position: absolute;
-    top: 55px;
-    left: 50.5rem;
+    top: 44px;
+    right: 50px;
     z-index: 4;
-    width: 18%;
-    max-width: 18%;
+    width: 15vw;
+    height: 41vh;
+    overflow: hidden;
+    /* max-width: 18%; */
 }
 .result{
     display: block;
@@ -178,7 +180,7 @@
 /* CSS FOR ANIME PLAYER  */
 .anime-player {
     display: flex;
-    gap: 1%;
+    gap: 3%;
     margin: 20px 0px 0px 35px;
 }
 .anime-title::before{
@@ -290,13 +292,8 @@
     display: flex;
 }
 
-.seasonContainer{
-    order: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 26%;
-    flex: 0.5;
+.seasonContainer{  
+    max-width: 23%;
 }
 .seasonbox{
     order: 2;

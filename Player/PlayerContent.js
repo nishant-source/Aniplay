@@ -40,19 +40,18 @@ function fetchEpList(url) {
                 }
                 // Log or use the retrieved 'title' value
                 console.log('Title:', itemTitle);
-            
                 const EpisodeList = document.createElement("div");
                 EpisodeList.classList.add("epName");
                 if(index%2 != 0){
                 EpisodeList.innerHTML = `
-                <div  class="episode">
+                <div  class="episode" onClick="playVideo('${index}','${animeIdValue}')">
                <span> <span>${index}</span>${item.title}</span>
             </div>
            
                     `;}
                     else{
                         EpisodeList.innerHTML = ` 
-                         <div  class="episode color2">
+                         <div  class="episode color2" onClick="playVideo('${index}','${animeIdValue}')">
                         <span> <span>${index}</span>${item.title}</span>
                          </div>
                 
@@ -81,6 +80,8 @@ function fetchEpList(url) {
 
     
     let itemTitle ;
+
+    // Function for Getting Anime Details from the API 
 function fetchDetail(url) {
     fetch(url)
         .then(response => {
@@ -122,3 +123,14 @@ function fetchDetail(url) {
 }
 let url =`https://api.jikan.moe/v4/anime/${animeIdValue}/full`;
 fetchDetail(url);
+
+
+const Iframe = document.getElementById('myIframe');
+
+//function for play Video of Iframe 
+
+function playVideo(index, AnimeId){
+
+    let url = `https://streamtape.site/e/j4rMZyeZlGFqXz/EP-01.mp4`
+    Iframe.src = url;
+}

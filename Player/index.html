@@ -36,23 +36,26 @@
                     <h2>Aniplay</h2>
                 </a>
             </div>
+            <div class="Search-box">
             <div class="search-bar" style="display: none;">
-                <input type="text" placeholder="Search..." id="sBarr">
-            </div>
-            <div id="results-container" style="display: none;"></div>
             <div id="search-icon" class="search-icon">
                 <img src="/image/search_logo.svg" alt="search-icon">
             </div>
+                <input type="text" placeholder="Search..." id="sBarr">
+            </div>
+            <div id="results-container" style="display: none;"></div>
+            
+        </div>
         </div>
     </header>
     <main>
         <section class="anime-player">
             <div class="video-player">
-                <div id="AnimeTitle" class="anime-title"><p></p></div>
+                <div id="AnimeTitle" class="anime-title"></div>
                 <div class="player">
-                    <div id="loading-indicator">
+                    <!-- <div id="loading-indicator">
                         <div class="loader"></div>
-                    </div>
+                    </div> -->
                     <iframe id="myIframe"
                         src=""
                         allow="autoplay; geolocation; display-capture; picture-in-picture"
@@ -113,11 +116,11 @@
                 <div id="available-list">
                     <div class="item-card">
                         <div class="item " data-url="/That time i got reincarnated as a Slime">
-                            <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
+                            <img src="/image/anime-image.jpg" alt="That time I got reincarnated as a slime">
                             <p>That Time I Got Reincarnated as a Slime</p>
                         </div>
                         <div class="floatItem">
-                            <img src="image/anime-image.jpg" alt="That time I got reincarnated as a slime">
+                            <img src="/image/anime-image.jpg" alt="That time I got reincarnated as a slime">
                             <p>That Time I Got Reincarnated as a Slime</p>
                             <div class="playButton"><a href="That time i got reincarnated as a Slime">Play</a></div>
                         </div>
@@ -167,5 +170,5 @@
 </script> -->
 <script src="/AvailList.js"></script>
 <script src="/SearchResult.js"></script>
-<script src="/That time i got reincarnated as a Slime/PlayerContent.js"></script>
+<script src="/Player/PlayerContent.js"></script>
 </html>

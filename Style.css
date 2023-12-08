@@ -59,7 +59,9 @@ header{
     padding: 10px;
     text-align: center;
   }
- 
+ .Search-box{
+    position: relative;
+ }
 .search-icon img{
     width: 30px;
     height: 30px;
@@ -255,7 +257,7 @@ header{
         font-weight: bold;
 }
 .color2{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .anime-detail-box{
     display: flex;
@@ -266,6 +268,7 @@ header{
 }
 .anime-detail-box::before{
     content: "";
+    background-color: rgb(67, 54, 80);
     /* background-image: url("/image/anime-image.jpg"); Replace with the URL of your image */
     filter: blur(10px); /* Adjust the blur value as needed */
     position: absolute;
