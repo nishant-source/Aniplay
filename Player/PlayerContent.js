@@ -105,14 +105,14 @@ function fetchDetail(url) {
                 const itemDesc = dataArray.synopsis;
                 AnimeTitle.innerHTML=`<p>${itemTitle}</p>`;
                 animeDetailImg.innerHTML=`<img src="${itemImg}"
-                alt="${itemTitle}" width="80px" height="120px">`;
+                alt="${itemTitle}" width="120px" height="160px">`;
                 // beforePseudoElement.backgroundImage = "url('" + itemImg + "')";
                 AnimeDetail.innerHTML=`
                 <h3>${itemTitle}</h3>
                     <p>Total Episodes : ${itemEpNo}</p>
                     <p>Aired: ${itemAired}</p>
                 `;
-           
+             animeDesc.innerHTML=`${itemDesc}`;
             
 
         })
@@ -131,6 +131,6 @@ const Iframe = document.getElementById('myIframe');
 
 function playVideo(index, AnimeId){
 
-    let url = `https://streamtape.site/e/j4rMZyeZlGFqXz/EP-01.mp4`
+    let url = `https://streamtape.site/e/j4rMZyeZlGFqXz/unluck-undead.mp4`;
     Iframe.src = url;
 }

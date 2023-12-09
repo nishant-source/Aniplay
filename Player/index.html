@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="/Style.css">
     <link rel="stylesheet" href="/LStyle.css" media="screen and (min-width: 1180px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@100;200&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65435eb3b768240012ce5e56&product=inline-share-buttons&source=platform" async="async"></script>
 </head>
@@ -38,10 +39,11 @@
             </div>
             <div class="Search-box">
             <div class="search-bar" style="display: none;">
+            
+                <input type="text" placeholder="Search..." id="sBarr">
+            </div>
             <div id="search-icon" class="search-icon">
                 <img src="/image/search_logo.svg" alt="search-icon">
-            </div>
-                <input type="text" placeholder="Search..." id="sBarr">
             </div>
             <div id="results-container" style="display: none;"></div>
             
@@ -100,11 +102,12 @@
                 <div id="AnimeDetail" class="anime-detail">
                     
                 </div>
+                <div id="animeDesc"></div>
             </div>
-                <div class="seasonbox">
+                <!-- <div class="seasonbox">
                     <div class="seasonbtn" style="background-color: rgb(75, 97, 116);"><span>Season 1</span></div>
                     <div class="seasonbtn" style="margin-left: 30px;"><a href="/That time i got reincarnated as a Slime//season2/index.html"><span>Season 2</span></a></div>
-                </div>
+                </div> -->
             
         </div>
         </section>
