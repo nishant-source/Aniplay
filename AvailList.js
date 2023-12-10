@@ -22,9 +22,7 @@ function fetchAvail(url) {
                 }
                 const itemID= dataArray.mal_id;
                 const itemImg = dataArray.images.jpg.image_url;
-                // Log or use the retrieved 'title' value
-                console.log('Title:', itemTitle);
-                console.log('ImageLink:', itemImg);
+                const itemDesc = dataArray.synopsis;
                 const availItem = document.createElement("div");
                 availItem.classList.add("item-card");
                 availItem.innerHTML = `
@@ -33,8 +31,9 @@ function fetchAvail(url) {
                 <p>${itemTitle}</p>
             </div>
             <div class="floatItem">
-            <img src="${itemImg}" alt="${itemTitle}">
-            <p>${itemTitle}</p>
+            
+            <span>${itemTitle}</span>
+            <p>${itemDesc}</p>
                 <div class="playButton" onClick="redirectToPlayer('${itemID}')">Play</div>
             </div>
                     `;
