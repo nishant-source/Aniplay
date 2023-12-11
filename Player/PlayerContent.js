@@ -130,7 +130,34 @@ const Iframe = document.getElementById('myIframe');
 //function for play Video of Iframe 
 
 function playVideo(index, AnimeId){
-
-    let url = `https://streamtape.site/e/j4rMZyeZlGFqXz/unluck-undead.mp4`;
-    Iframe.src = url;
+    if(AnimeId ="40748"){
+let urls =[
+"https://streamtape.site/e/eA8ABOkqBJcYqkm",
+"https://streamtape.site/e/AlakKqw2xohXKKM",
+"https://streamtape.site/e/2PvWVZ4Y0jCZMPR",
+"https://streamtape.site/e/WPa9qyZo60H03w",
+"https://streamtape.site/e/QWYrBwJ7kAs0oez",
+"https://streamtape.site/e/GM3Lw20bDXC1XkD",
+"https://streamtape.site/e/r8J9K3l0YZSegB",
+"https://streamtape.site/e/mPlvdzaQdZFbxq1",
+"https://streamtape.site/e/jayl3gZXX4IaO4",
+"https://streamtape.site/e/oMyjyj8m0OFbbY",
+"https://streamtape.site/e/lkgY3bwbDotB16",
+"https://streamtape.site/e/2bVOBa2QKahRMg",
+"https://streamtape.site/e/kgD4vGdMoLSOxKY",
+"https://streamtape.site/e/llpLRbpyGvczvD",
+"https://streamtape.site/e/xPXGkJXrX9ikkrj",
+"https://streamtape.site/e/zk0dpBk8vWHQwK",
+"https://streamtape.site/e/016qr1BZKBIKRw",
+"https://streamtape.site/e/7DmDabBApDFAXGg",
+"https://streamtape.site/e/0dOb07qDaVFb7VM",
+"https://streamtape.site/e/AXpWvAzOXrIXYyo",
+"https://streamtape.site/e/02WzaX6xeZibGXa",
+"https://streamtape.site/e/LO9erQRjVvtRkyr",
+"https://streamtape.site/e/zrWq62ZvG9fYLRl",
+"https://streamtape.site/e/bRG2BYv1kWsPkZV"
+]
+    Iframe.src = urls[index-1];
+    console.log(urls[index-1]);
+}
 }

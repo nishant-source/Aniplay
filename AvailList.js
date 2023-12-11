@@ -50,7 +50,13 @@ function fetchAvail(url) {
 let availAnime=[
     "54918",
     "53887",
-    "41487"
+    "41487",
+    "54112",
+    "52347",
+    "29803",
+    "21",
+    "40748",
+    "52830"
 ]
 availAnime.forEach(item =>{
     let url =`https://api.jikan.moe/v4/anime/${item}/full`
