@@ -172,6 +172,7 @@
  /* CSS FOR ANIME RECOMMAND SECTION  */
 .categories{
     display: flex;
+    flex-wrap:wrap;
     padding: 10px 0px;
 
 }
